@@ -1,4 +1,16 @@
+import { hasSelectionSupport } from "@testing-library/user-event/dist/utils"
+import { useState } from "react"
 function Cocktail() {
+
+  const [cocktailSearch, setCocktailSearch] = useState ('')
+  const [cocktailName, setCocktailName] = useState ('')
+  const [cocktailInstructions, setCocktailInstructions] = useState ('')
+  const [cocktailImageUrl, setCocktailImageUrl] = useState ('')
+  
+  function updateCocktailSearch(event){
+    setCocktailSearch (event.target.value) 
+  }
+
   function getFetch(){
 
 
@@ -6,13 +18,15 @@ function Cocktail() {
     
      
    
-     fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita`)
+     fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${cocktailSearch}`)
          .then(res => res.json()) // parse response as JSON
          .then(data => {
            console.log(data)
           
-           document.querySelector('.name').innerText = data.drinks[0].strDrink
-           document.querySelector('.instructions').innerText = data.drinks[0].strInstructions
+           setCocktailName(data.drinks[0].strDrink)  
+           setCocktailInstructions(data.drinks[0].strInstructions)
+           setCocktailImageUrl (data.drinks[0].strDrinkThumb)
+
    
          })
          .catch(err => {
@@ -21,10 +35,11 @@ function Cocktail() {
   return (
     <div class="apiContainer">
         <h3 class="paragraphApi">Want to try our cocktails <span class="atHome"> at home? </span> </h3>
-        <input type="text" placeholder="Introduce name"></input>
+        <input type="text" placeholder="Introduce name" onChange= {updateCocktailSearch}></input>
         <button onClick={getFetch}>Show me how</button>
-        <h5 class="name"></h5>
-        <p class="instructions"></p>
+        <h5 class='name'>{cocktailName}</h5>
+        <p class= 'instructions'>{cocktailInstructions}</p>
+        <img src={cocktailImageUrl}/>
         
     </div>
   );
