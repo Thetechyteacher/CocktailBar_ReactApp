@@ -13,11 +13,6 @@ function Cocktail() {
 
   function getFetch(){
 
-
-    //let choice = document.querySelector("input").value
-    
-     
-   
      fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${cocktailSearch}`)
          .then(res => res.json()) // parse response as JSON
          .then(data => {
@@ -48,5 +43,5 @@ export default Cocktail;
 
 
 
-//document.querySelector("button").addEventListener("click", getFetch);
+
 
