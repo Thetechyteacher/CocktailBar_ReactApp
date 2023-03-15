@@ -29,12 +29,12 @@ function Cocktail() {
          })};
   return (
     <div class="apiContainer">
-        <h3 class="paragraphApi">Want to try our cocktails <span class="atHome"> at home? </span> </h3>
+        <h3 class="paragraphApi">Want to try our cocktails at home?</h3>
         <input type="text" placeholder="Introduce name" onChange= {updateCocktailSearch}></input>
         <button onClick={getFetch}>Show me how</button>
         <h5 class='name'>{cocktailName}</h5>
         <p class= 'instructions'>{cocktailInstructions}</p>
-        <img src={cocktailImageUrl}/>
+        <img src={cocktailImageUrl} style={{"height" : "200px", "width" : "200px", "margin-bottom": "50px"}}/>
         
     </div>
   );
