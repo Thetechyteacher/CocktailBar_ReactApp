@@ -1,3 +1,4 @@
+
 import { hasSelectionSupport } from "@testing-library/user-event/dist/utils"
 import { useState } from "react"
 function Cocktail() {
@@ -27,6 +28,7 @@ function Cocktail() {
          .catch(err => {
              console.log(`error ${err}`)
          })};
+
   return (
     <div class="apiContainer">
         <h3 class="paragraphApi">Want to try our cocktails at home?</h3>
@@ -40,8 +42,5 @@ function Cocktail() {
   );
 }
 export default Cocktail;
-
-
-
 
 
