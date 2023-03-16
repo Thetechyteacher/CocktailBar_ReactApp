@@ -1,49 +1,46 @@
 
-import React, { useState, useEffect } from "react";
-import "../App.css";
-import "../public/index.html";
+import { hasSelectionSupport } from "@testing-library/user-event/dist/utils"
+import { useState } from "react"
+function Cocktail() {
 
+  const [cocktailSearch, setCocktailSearch] = useState ('')
+  const [cocktailName, setCocktailName] = useState ('')
+  const [cocktailInstructions, setCocktailInstructions] = useState ('')
+  const [cocktailImageUrl, setCocktailImageUrl] = useState ('')
+  
+  function updateCocktailSearch(event){
+    setCocktailSearch (event.target.value) 
+  }
 
-function Cocktail({choice}) {
-  
-  // 
-     
-      useEffect (function() {
-        if (choice){
-            fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${choice}`)
-            .then(function (response) {
-              return response.json()
-          })
-        }
-      });
-    
-  
-    
-    
+  function getFetch(){
+
+     fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${cocktailSearch}`)
+         .then(res => res.json()) // parse response as JSON
+         .then(data => {
+           console.log(data)
+          
+           setCocktailName(data.drinks[0].strDrink)  
+           setCocktailInstructions(data.drinks[0].strInstructions)
+           setCocktailImageUrl (data.drinks[0].strDrinkThumb)
+
+   
+         })
+         .catch(err => {
+             console.log(`error ${err}`)
+         })};
+
   return (
     <div class="apiContainer">
-        <h3 class="paragraphApi">Want to try our cocktails <span class="atHome"> at home? </span> </h3>
-        <input type="text" placeholder="Introduce name"></input>
-        <button>Show me how</button>
-        <h5 class="name"></h5>
-        <p class="instructions"></p>
+        <h3 class="paragraphApi">Want to try our cocktails at home?</h3>
+        <input type="text" placeholder="Introduce name" onChange= {updateCocktailSearch}></input>
+        <button onClick={getFetch}>Show me how</button>
+        <h5 class='name'>{cocktailName}</h5>
+        <p class= 'instructions'>{cocktailInstructions}</p>
+        <img src={cocktailImageUrl} style={{"height" : "200px", "width" : "200px", "margin-bottom": "50px"}}/>
         
     </div>
   );
 }
 export default Cocktail;
 
-// return (I though this one would work but it doesn't)
 
-//     GetFetch
-//     ?
-//     <div class="apiContainer">
-//       <h3 class="paragraphApi">Want to try our cocktails <span class="atHome"> at home? </span> </h3>
-//      <input type="text" placeholder="Introduce name"/>
-//       <button>Show me how</button>
-//       <h5 class="name"> {data.drinks[0].strDrink}</h5>
-//       <p class="instructions"> {data.drinks[0].strInstructions} </p>
-//       </div>
-// :
-
-// <h3>Data will appear here</h3>
