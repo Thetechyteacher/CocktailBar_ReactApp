@@ -36,7 +36,7 @@ function Cocktail() {
         <button onClick={getFetch}>Show me how</button>
         <h5 class='name'>{cocktailName}</h5>
         <p class= 'instructions'>{cocktailInstructions}</p>
-        <img src={cocktailImageUrl} style={{"height" : "200px", "width" : "200px", "margin-bottom": "50px"}}/>
+        <img src={cocktailImageUrl} style={{ "width" : "200px", "margin-bottom": "50px"}}/>
         
     </div>
   );
