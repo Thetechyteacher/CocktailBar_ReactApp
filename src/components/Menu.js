@@ -101,10 +101,10 @@ function Menu() {
                         <span class="price">£14.95 </span>
                     </div>
                 </div>
-                    <h3> signature. </h3>
+                    <h3> signature cocktails. </h3>
                     <div class="grid">
                         <div class="col-10 editable">
-                            <p> Mezze Board Chestnut hummus, harissa, burella (vegan buratta), flatbread & marinated beets. </p>
+                            <p> Piña Colada. Hvana Club 3 year old rum, coconut cream, pineapple and orange. </p>
                         </div>
                         <div class="col-2 editable">
                             <span class="price">£19.95 </span>
