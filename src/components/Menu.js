@@ -65,28 +65,7 @@ function Menu() {
 
           
             <div class="col-5_lg-6_sm-12 padded-2 mob-padded-t-0">
-                <h3> classics. </h3>
-                <div class="grid">
-                    <div class="col-10 editable">
-                        <p> Pumpkin & Sage Raviolli Vegan ‘Nduja cream, “feta”, baby spinach & pumpkin seeds. </p>
-                    </div>
-                    <div class="col-2 editable">
-                        <span class="price">£16.95 </span>
-                    </div>
-                    <div class="col-10 editable">
-                        <p> Roast Chicken Breast Artichoke purée, wild mushrooms & spinach. </p>
-                    </div>
-                    <div class="col-2 editable">
-                        <span class="price">£16.95 </span>
-                    </div>
-                    <div class="col-10 editable">
-                        <p> Fish & Chips Beer batter, mushy peas & tartare sauce. </p>
-                    </div>
-                    <div class="col-2 editable">
-                        <span class="price">£14.95 </span>
-                    </div>
-                </div>
-                <h3> negronis. </h3>
+            <h3> negronis. </h3>
                 <div class="grid">
                     <div class="col-10 editable">
                         <p> Flash Grilled Mini Steak Chips, watercress & Béarnaise sauce. </p>
@@ -101,19 +80,55 @@ function Menu() {
                         <span class="price">£14.95 </span>
                     </div>
                 </div>
+                <h3> classics. </h3>
+                <div class="grid">
+                    <div class="col-10 editable">
+                        <p> Piña Colada. Hvana Club 3 year old rum, coconut cream, pineapple and orange. </p>
+                    </div>
+                    <div class="col-2 editable">
+                        <span class="price">£11.95 </span>
+                    </div>
+                    <div class="col-10 editable">
+                        <p> Margarita. Olmeca Altos Blanco tequila, fruit liqueur, lime and sugar.</p>
+                    </div>
+                    <div class="col-2 editable">
+                        <span class="price">£11.95 </span>
+                    </div>
+                    <div class="col-10 editable">
+                        <p> Daiquiri. Havana Club Special rum, fruit purée, lime and sugar.</p>
+                    </div>
+                    <div class="col-2 editable">
+                        <span class="price">£11.95 </span>
+                    </div>
+                </div>
+                {/* <h3> negronis. </h3>
+                <div class="grid">
+                    <div class="col-10 editable">
+                        <p> Flash Grilled Mini Steak Chips, watercress & Béarnaise sauce. </p>
+                    </div>
+                    <div class="col-2 editable">
+                        <span class="price">£17.95 </span>
+                    </div>
+                    <div class="col-10 editable">
+                        <p> Wild Mashroom Risotto Crispy enoki & parmesan cream. </p>
+                    </div>
+                    <div class="col-2 editable">
+                        <span class="price">£14.95 </span>
+                    </div>
+                </div> */}
                     <h3> signature cocktails. </h3>
                     <div class="grid">
                         <div class="col-10 editable">
-                            <p> Piña Colada. Hvana Club 3 year old rum, coconut cream, pineapple and orange. </p>
+                            <p> Bellini. Belvedere vodka, Prosecco, fruit liqueur, fruit puré  </p>
                         </div>
                         <div class="col-2 editable">
-                            <span class="price">£19.95 </span>
+                            <span class="price">£14.95 </span>
                         </div>
                         <div class="col-10 editable">
-                            <p>  </p>Charcuterie Board Salami, chorizo, prosciutto, Manchego, sourdough, apple & fig chutney
+                            <p> Frosé. Rosé vermouth, strawberry-infused wine,  strawberry purée and lemon  </p>
                         </div>
                         <div class="col-2 editable">
-                            <span class="price">£21.95 </span>
+                            <span class="price">£14.95 </span>
                         </div>
                 </div>
             </div>
