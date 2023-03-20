@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/CocktailBar_ReactApp/static/css/main.ec2ea286.css",
-    "main.js": "/CocktailBar_ReactApp/static/js/main.bd0b52a9.js",
+    "main.js": "/CocktailBar_ReactApp/static/js/main.892cf821.js",
     "static/js/787.ceab6c0f.chunk.js": "/CocktailBar_ReactApp/static/js/787.ceab6c0f.chunk.js",
     "static/media/water-light.jpg": "/CocktailBar_ReactApp/static/media/water-light.1ae7625e3e57a518ab87.jpg",
     "static/media/negroni-glass-faded.jpg": "/CocktailBar_ReactApp/static/media/negroni-glass-faded.502cfdc2811f66beeaf0.jpg",
@@ -9,11 +9,11 @@
     "static/media/negroni-2.jpg": "/CocktailBar_ReactApp/static/media/negroni-2.179c8d0854100a1767fe.jpg",
     "index.html": "/CocktailBar_ReactApp/index.html",
     "main.ec2ea286.css.map": "/CocktailBar_ReactApp/static/css/main.ec2ea286.css.map",
-    "main.bd0b52a9.js.map": "/CocktailBar_ReactApp/static/js/main.bd0b52a9.js.map",
+    "main.892cf821.js.map": "/CocktailBar_ReactApp/static/js/main.892cf821.js.map",
     "787.ceab6c0f.chunk.js.map": "/CocktailBar_ReactApp/static/js/787.ceab6c0f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ec2ea286.css",
-    "static/js/main.bd0b52a9.js"
+    "static/js/main.892cf821.js"
   ]
 }
